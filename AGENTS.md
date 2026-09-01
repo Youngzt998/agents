@@ -31,4 +31,5 @@ mechanism should read them by path.
 | Writing or changing code, in any language | `~/.agents/skills/coding/SKILL.md` |
 | Proof assistants | `~/.agents/skills/proof-assistant/SKILL.md` |
 | Academic writing | `~/.agents/skills/paper-writing/SKILL.md` |
+| Tech blog posts | `~/.agents/skills/tech-blog/SKILL.md` |
 | Slides | `~/.agents/skills/slides/SKILL.md` |
