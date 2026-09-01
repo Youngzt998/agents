@@ -1,0 +1,8 @@
+# Reference config for Codex.
+# install.sh copies this to ~/.codex/config.toml only when that file does not
+# exist; an existing file is never modified.
+#
+# Codex config keys change between versions -- verify against `codex --help`
+# or the official docs before enabling anything here.
+
+# TODO

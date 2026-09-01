@@ -1,0 +1,12 @@
+# Credentials never belong in this repo, private or not.
+*credentials*
+*.key
+*.pem
+.env
+.env.*
+config.json
+
+# Installer backups and OS junk
+*.bak.*
+.DS_Store
+*.swp
