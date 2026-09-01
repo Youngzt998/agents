@@ -28,7 +28,7 @@ mechanism should read them by path.
 
 | Area | File |
 |---|---|
+| Writing or changing code, in any language | `~/.agents/skills/coding/SKILL.md` |
+| Proof assistants | `~/.agents/skills/proof-assistant/SKILL.md` |
 | Academic writing | `~/.agents/skills/paper-writing/SKILL.md` |
 | Slides | `~/.agents/skills/slides/SKILL.md` |
-| Python | `~/.agents/skills/python/SKILL.md` |
-| C++ / MLIR / LLVM | `~/.agents/skills/cpp-mlir/SKILL.md` |

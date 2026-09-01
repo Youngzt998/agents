@@ -45,11 +45,30 @@ link_each() {
   done
 }
 
+# Remove symlinks that still point into this repo but whose target is gone,
+# i.e. entries deleted upstream. Anything not pointing into the repo is left alone.
+prune_dangling() {
+  local dstdir="$1"
+  [ -d "$dstdir" ] || return 0
+  local e target
+  for e in "$dstdir"/*; do
+    [ -L "$e" ] || continue
+    [ -e "$e" ] && continue
+    target="$(readlink "$e")"
+    case "$target" in
+      "$REPO"/*) rm -f "$e"; log "prune   ${e/#$HOME/\~} (removed from repo)" ;;
+    esac
+  done
+}
+
 section "Claude Code  ($CLAUDE_DIR)"
 link "$REPO/AGENTS.md" "$CLAUDE_DIR/CLAUDE.md"
 link_each "$REPO/skills"   "$CLAUDE_DIR/skills"   '*'
+prune_dangling "$CLAUDE_DIR/skills"
 link_each "$REPO/agents"   "$CLAUDE_DIR/agents"   '*.md'
+prune_dangling "$CLAUDE_DIR/agents"
 link_each "$REPO/commands" "$CLAUDE_DIR/commands" '*.md'
+prune_dangling "$CLAUDE_DIR/commands"
 
 # settings.json is merged, not symlinked: Claude Code writes back to it
 # (/model, /config), which would leave the repo permanently dirty.
@@ -86,6 +105,7 @@ section "Codex  ($CODEX_DIR)"
 mkdir -p "$CODEX_DIR"
 link "$REPO/AGENTS.md" "$CODEX_DIR/AGENTS.md"
 link_each "$REPO/commands" "$CODEX_DIR/prompts" '*.md'
+prune_dangling "$CODEX_DIR/prompts"
 if [ ! -f "$CODEX_DIR/config.toml" ]; then
   cp "$REPO/settings/codex.config.toml" "$CODEX_DIR/config.toml"
   log "copy    ~/.codex/config.toml (from template)"
