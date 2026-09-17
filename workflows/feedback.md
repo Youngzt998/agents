@@ -4,7 +4,7 @@ Trigger: the user says the output was wrong, unclear, or badly worded, or invoke
 
 ## Step 0: route the lesson
 
-Two rule repos may be mounted: this general repo (`~/.agents`) and an overlay repo, meaning a private rules repo whose entry file imports this one (for example an employer-internal repo). Decide where the lesson belongs before writing anything:
+Two rule repos may be mounted: this general repo (`~/.agents`) and an overlay repo, meaning a private rules repo whose entry file imports this one (for example an employer-internal repo). On a machine with no overlay mounted (`~/.claude/CLAUDE.md` resolves to `~/.agents/CLAUDE.md`), every lesson is recorded in this repo and the routing below is skipped. Otherwise decide where the lesson belongs before writing anything:
 
 - The lesson holds for any project (a communication habit, a formatting rule, a word-choice rule): record it in `~/.agents/feedback/LOG.md`. Before writing, replace every private identifier in the entry — internal project names, internal paths, internal terms — with a generic description that preserves the lesson.
 - The lesson only makes sense inside the overlay's projects (a project vocabulary decision, a domain rule): record it in the overlay repo's feedback log, and update the overlay's glossary or project card there.

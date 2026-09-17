@@ -19,6 +19,7 @@ conflict, the overlay wins and the conflict is reported.
 4. `~/.agents/rules/20-code-design.md`
 5. `~/.agents/rules/30-terminology.md`
 6. `~/.agents/rules/40-evidence-levels.md`
+7. `~/.agents/rules/50-scaffolding.md`
 
 ## 2. On-demand rules (routing table)
 
