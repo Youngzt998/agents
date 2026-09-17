@@ -39,6 +39,7 @@ read them by path.
 | Writing or changing code, in any language | `~/.agents/skills/coding/SKILL.md` |
 | Proof assistants | `~/.agents/skills/proof-assistant/SKILL.md` |
 | Academic writing | `~/.agents/skills/paper-writing/SKILL.md` |
-| Reviewing a paper, or reviewing an artifact for artifact evaluation | `~/.agents/skills/paper-review/SKILL.md` |
+| Reviewing a paper | `~/.agents/skills/paper-review/SKILL.md` |
+| Artifact evaluation review | `~/.agents/skills/artifact-evaluation/SKILL.md` |
 | Tech blog posts | `~/.agents/skills/tech-blog/SKILL.md` |
 | Slides | `~/.agents/skills/slides/SKILL.md` |

@@ -1,3 +1,0 @@
-# Artifact evaluation review
-
-<!-- TODO -->
