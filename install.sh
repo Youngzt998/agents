@@ -62,7 +62,7 @@ prune_dangling() {
 }
 
 section "Claude Code  ($CLAUDE_DIR)"
-link "$REPO/AGENTS.md" "$CLAUDE_DIR/CLAUDE.md"
+link "$REPO/CLAUDE.md" "$CLAUDE_DIR/CLAUDE.md"
 link_each "$REPO/skills"   "$CLAUDE_DIR/skills"   '*'
 prune_dangling "$CLAUDE_DIR/skills"
 link_each "$REPO/agents"   "$CLAUDE_DIR/agents"   '*.md'

@@ -1,8 +1,8 @@
 ---
 name: coding
-description: "TODO: one line stating when this skill applies. Claude Code uses this text to decide whether to load the skill, so it must name the triggering situation concretely."
+description: Apply the personal code-design rules when writing or changing code in any language. Use before implementing any code change beyond a trivial edit.
 ---
 
 # Coding
 
-<!-- TODO -->
+Apply ~/.agents/rules/20-code-design.md. If the change adds a module, type, interface, or a new case to an existing family, follow ~/.agents/workflows/design-note.md first and wait for acceptance. Before delivering, run the "Code" section of ~/.agents/workflows/review-output.md.
