@@ -19,6 +19,7 @@ These rules apply to every session. Project-level CLAUDE.md files add to them an
 
 - Before describing, summarizing, or naming anything about a project: read `glossary/GLOSSARY.md` and `glossary/projects/<project>.md`.
 - Before writing any document longer than a paragraph: follow `workflows/write-doc.md`.
+- Before drafting or editing an academic paper: follow `skills/paper-writing/SKILL.md`, which routes to the prose, terminology, figure and process rules. Quality checks are `workflows/paper-quality.md`, and they run only when asked.
 - Before writing code that adds a new module, abstraction, or interface: follow `workflows/design-note.md`.
 - Before your final message in a task: run the checklist in `workflows/review-output.md`.
 - When the user says you got something wrong: follow `workflows/feedback.md` (it routes the lesson to this repo or to the overlay repo).

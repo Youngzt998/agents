@@ -32,3 +32,21 @@ The same routing applies to rule changes in step 5: general rules change in `~/.
 6. If the complaint was about a word, also add a glossary entry or a "do not use" line, in the routed repo's glossary.
 
 Do not apologize in the log. Record facts.
+
+## A silent deletion is feedback
+
+A correction is not always spoken. Before acting on a new instruction, diff the
+working tree against the last commit. Text the user cut without mentioning it is a
+rejection of what was written.
+
+1. Find what was cut. `git diff` against the last commit, and read the removals.
+2. Name the habit that produced the cut text. The cut itself is the evidence: what
+   did the removed words have in common with the words the user has removed
+   before?
+3. Write the habit down as an entry, in this repo or in the overlay repo, by the
+   routing rule above.
+4. Stop producing it.
+
+Ask about a silent cut only when the habit behind it is genuinely unclear.
+Otherwise infer it and act. Recorded as `rules/00-communication.md`, section
+"Editing what the user wrote".

@@ -34,6 +34,7 @@ read them by path.
 | Adding a module, abstraction, or interface | `~/.agents/workflows/design-note.md` |
 | Before the final message of a task | `~/.agents/workflows/review-output.md` |
 | The user says the output was wrong | `~/.agents/workflows/feedback.md` |
+| Checking a paper draft before review or submission | `~/.agents/workflows/paper-quality.md` |
 | Writing or changing code, in any language | `~/.agents/skills/coding/SKILL.md` |
 | Proof assistants | `~/.agents/skills/proof-assistant/SKILL.md` |
 | Academic writing | `~/.agents/skills/paper-writing/SKILL.md` |
