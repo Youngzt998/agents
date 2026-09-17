@@ -12,12 +12,15 @@ These rules apply to every session. Project-level CLAUDE.md files add to them an
 
 ## Reference material (read when relevant, not every turn)
 
-- Terminology and canonical project descriptions: `~/.agents/glossary/`; terms the user no longer needs explained: `glossary/known-terms.md`
+- Terminology: `~/.agents/glossary/terminology.md` is the global default for every concept; `glossary/GLOSSARY.md` is the writing-specific subset and override; `glossary/notation.md` holds mathematical notation; `glossary/projects/` holds the canonical project descriptions; `glossary/known-terms.md` lists terms the user no longer needs explained
+- Accumulated personal knowledge: `~/.agents/KNOWLEDGE-BASE.md`
 - Multi-step procedures: `~/.agents/workflows/`
 - Past corrections: `~/.agents/feedback/LOG.md`
 
 ## When to read what
 
+- Before naming any concept, in any kind of work: read `glossary/terminology.md`. While writing, `glossary/GLOSSARY.md` overrides it.
+- Before writing mathematical notation: read `glossary/notation.md`.
 - Before describing, summarizing, or naming anything about a project: read `glossary/GLOSSARY.md` and `glossary/projects/<project>.md`.
 - Before writing any document longer than a paragraph: follow `workflows/write-doc.md`.
 - Before drafting or editing an academic paper: follow `skills/paper-writing/SKILL.md`, which routes to the prose, terminology, figure and process rules. Quality checks are `workflows/paper-quality.md`, and they run only when asked.

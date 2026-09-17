@@ -29,7 +29,10 @@ read them by path.
 
 | Area | File |
 |---|---|
+| Naming any concept, in any work | `~/.agents/glossary/terminology.md` |
+| Writing mathematical notation | `~/.agents/glossary/notation.md` |
 | Describing or naming anything about a project | `~/.agents/glossary/GLOSSARY.md` and `glossary/projects/<project>.md` |
+| A fact learned before and needed again | `~/.agents/KNOWLEDGE-BASE.md` |
 | Terms the user no longer needs explained | `~/.agents/glossary/known-terms.md` |
 | Any document longer than a paragraph | `~/.agents/workflows/write-doc.md` |
 | Adding a module, abstraction, or interface | `~/.agents/workflows/design-note.md` |

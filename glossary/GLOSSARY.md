@@ -1,5 +1,9 @@
 # Glossary
 
+Writing-specific terminology. The global default for every concept is
+`glossary/terminology.md`; an entry here is a subset of it, or an override that
+applies while writing.
+
 Cross-project terms. Project-specific terms live in `projects/<name>.md`. An overlay repo (a private rules repo that imports this one) may add its own glossary; its entries add to this file and never override it. Every entry: term, one-line definition, optional "do not use" synonyms.
 
 Format:
