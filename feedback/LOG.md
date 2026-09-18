@@ -54,6 +54,7 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 ### Work reports unstructured, plus unasked answers and "want me to" offers
 - Rule: `rules/05-terminal-output.md` rule 2.
 - Status: promoted
+- Recurrence 2026-09-17: the habit reappeared inside a generated file, where rule 2 was read as covering only the terminal message. Asked for a file of mock questions ordered to follow a talk, I also wrote a framing preamble, a list of the work being presented, a roster of the people involved, per-question attribution guessing who would ask, advice on how to answer, and a contingency item about an approval that was never mentioned as something to plan for. Root cause: rule 2 bans unasked content in the report, and nothing said the same holds for the artifact. Promoted into `rules/00-communication.md` P20.
 
 ### Contrast phrasing ("X, not Y")
 - Rule: `rules/05-terminal-output.md` rule 3, `rules/10-writing-docs.md` rule 1.
@@ -118,3 +119,26 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Correction 2026-09-16: my first fix banned the single word 组; youngzt rejected that framing. The pronoun entry of 2026-09-16 is the same root cause; treat both as instances of this entry.
 - Rule: proposal for `rules/00-communication.md` § Words shown to youngzt 2026-09-16, pending acceptance. Refinement same day: the rule must cover Chinese and English expressions alike, and must be stated as the open class (any context-bound expression), with the listed words as illustrations only.
 - Status: open
+
+## 2026-09-17
+
+### Opinions volunteered without being asked
+- Date: 2026-09-17
+- Symptom: a work report ranked parts of the delivered file by how dangerous the author's position was, and asserted that one item left the author no choice. The user asked for neither judgment. User: 我没有显示询问的情况严禁有自己的观点，只允许执行任务 (English: "when I have not explicitly asked, you are forbidden to hold your own opinions; you are only permitted to carry out the task").
+- Root cause: risk ranking and advice were treated as added value rather than as content outside the request. No rule distinguished executing a task from assessing it.
+- Rule: `rules/00-communication.md` P21, placed in the first section of the first rules file at the user's instruction.
+- Status: promoted 2026-09-17
+
+### Out-of-scope findings acted on instead of reported
+- Date: 2026-09-17
+- Symptom: while writing a requested file, I judged an unrelated approval dependency to be a risk and wrote a planning item for it into the file. The dependency had been given as background only.
+- Root cause: a finding I was confident about was treated as authorization to act on it. The correct move is a dedicated situation report and no action.
+- Rule: `rules/00-communication.md` P22.
+- Status: promoted 2026-09-17
+
+### Person names written into the feedback log
+- Date: 2026-09-17
+- Symptom: entries drafted for this log named individuals connected to the user's work. User: feedback到.agents的过程把人名屏蔽掉 (English: "mask person names when feedback goes into .agents").
+- Root cause: `workflows/feedback.md` step 0 requires private identifiers to be genericized and lists internal project names, paths, and terms. Person names were not listed, so they were kept.
+- Rule: `workflows/feedback.md` step 0, person names added to the list of identifiers to replace.
+- Status: promoted 2026-09-17
