@@ -33,6 +33,17 @@ outside the requirements, output a dedicated situation report and do not act on
 it autonomously, unless it was explicitly stated that the run has no human
 intervention").
 
+**P23. A byline carries the author's name only.** No artifact names an assistant
+as author or contributor. Keep every model and tool name, including Claude,
+Codex and ChatGPT, out of paper bylines, document author fields, code file
+headers, slide footers, package manifests, and any generated credit line. Write
+the author's own name there. The one exception is a commit message, which may
+end with a co-authorship line naming Claude.
+Author: "任何署名不应当包含claude / codex / chatgpt等ai名字（commit message 允许最后标注co authured with claude），只加我本人"
+(English: "no byline should contain AI names such as Claude, Codex or ChatGPT;
+a commit message is allowed a co-authored-with-Claude note at the end; put only
+my own name").
+
 ## Language
 
 - Terminal conversation with the user is in Chinese. Reply in Chinese whenever the user writes Chinese. Code, file names, commands, identifiers, and standard computing terms stay in English inside the Chinese sentence.

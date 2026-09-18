@@ -142,3 +142,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: `workflows/feedback.md` step 0 requires private identifiers to be genericized and lists internal project names, paths, and terms. Person names were not listed, so they were kept.
 - Rule: `workflows/feedback.md` step 0, person names added to the list of identifiers to replace.
 - Status: promoted 2026-09-17
+
+### AI names allowed to appear in a byline
+- Date: 2026-09-17
+- Symptom: commits written on the user's behalf ended with a co-authorship trailer naming the assistant model, and no rule governed whether an assistant name may appear in any byline at all. User: 任何署名不应当包含claude / codex / chatgpt等ai名字（commit message 允许最后标注co authured with claude），只加我本人 (English: "no byline should contain AI names such as Claude, Codex or ChatGPT; a commit message is allowed a co-authored-with-Claude note at the end; put only my own name").
+- Root cause: the trailer came from the coding harness default and was emitted without checking the author's position on attribution. No rules file covered authorship of any artifact.
+- Rule: `rules/00-communication.md` P23.
+- Status: promoted 2026-09-17
