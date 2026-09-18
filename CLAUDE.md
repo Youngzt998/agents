@@ -10,6 +10,10 @@ These rules apply to every session. Project-level CLAUDE.md files add to them an
 @~/.agents/rules/40-evidence-levels.md
 @~/.agents/rules/50-scaffolding.md
 
+## Precedence of manually invoked skills
+
+A skill the user invokes by hand (a slash command such as `/i-have-adhd`) overrides every rule in this repo that conflicts with it, from the invocation until the user turns it off or the session ends. Rules that do not conflict stay in force. Author: "我需要手动触发的skill在生效期间覆盖冲突的规则" (English: "a manually triggered skill overrides the conflicting rules while it is in effect").
+
 ## Reference material (read when relevant, not every turn)
 
 - Terminology: `~/.agents/glossary/terminology.md` is the global default for every concept; `glossary/GLOSSARY.md` is the writing-specific subset and override; `glossary/notation.md` holds mathematical notation; `glossary/projects/` holds the canonical project descriptions; `glossary/known-terms.md` lists terms the user no longer needs explained

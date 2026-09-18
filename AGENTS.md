@@ -11,6 +11,12 @@ repo — a private rules repo whose entry file reads this one, e.g. an
 employer-internal repo — adds on top of these rules; where they genuinely
 conflict, the overlay wins and the conflict is reported.
 
+A skill the user invokes by hand (a slash command) overrides every rule here
+that conflicts with it, from the invocation until the user turns it off or the
+session ends. Rules that do not conflict stay in force. Author: "我需要手动触发
+的skill在生效期间覆盖冲突的规则" (English: "a manually triggered skill overrides
+the conflicting rules while it is in effect").
+
 ## 1. Rules read at the start of every session, in order
 
 1. `~/.agents/rules/00-communication.md`
