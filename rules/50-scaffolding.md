@@ -17,6 +17,16 @@ The table below says what counts as structure for each kind of work. The left co
 | Rules or config repo | file layout, entry files, install wiring | the rules themselves, defaults, opinions |
 | Slides | deck outline, one line per slide | slide bodies |
 
+## User-led documents
+
+When the user has declared that they lead a document's design, the scaffolding
+default flips: generate nothing they did not name, including placeholders. A
+TODO the user never stated goes into the assistant's memory, to be raised in
+conversation at the right moment; it never appears in the document.
+Author: "写文档的时候todo的东西我没说就不要写在文档里，只能记在memory里面"
+(English: "when writing a document, TODO items I did not state must not be
+written into the document; record them only in memory").
+
 ## The failure this rule exists for
 
 Asked to initialize a personal rules repo, the assistant generated full rule text the author had never stated or described. A rule the author never gave is not the author's rule, whatever its quality: it cannot be traced, and the author cannot tell their own decisions from the assistant's.

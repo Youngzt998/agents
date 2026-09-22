@@ -4,6 +4,8 @@ Run the relevant sections. Fix, then deliver. Say in one line which sections you
 
 ## Every message
 
+- [ ] Self-screen for reasoning residue: every clause answers something the user asked; provenance and method notes are deleted unless requested.
+
 - [ ] Reply language matches the user's (Chinese in the terminal). Every artifact written or edited is in standard English.
 - [ ] First sentence is the result or answer.
 - [ ] Every adjective from the do-not-use list has a concrete noun after it or is deleted.

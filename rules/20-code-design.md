@@ -30,6 +30,8 @@ Goal: adding the next feature should touch one place, and a reader can predict w
 
 ## Change hygiene
 
+- Before editing any file, re-read it first: the user may have changed it since your last write. Build on their version; never overwrite their edits. Exception: the user has declared fully automatic iteration on that file.
+
 - Do not mix a refactor with a behavior change in one commit.
 - When you change an interface, update every implementor and every caller in the same change. Grep for them. List them in the commit message.
 - Delete dead code you make dead. Do not leave it "for reference".

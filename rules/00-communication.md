@@ -80,6 +80,9 @@ my own name").
 
 ## Claims
 
+- Generated text contains exactly what the task asked for. How a fact was obtained, how an estimate was made, what was checked — that is reasoning, and it stays out of the deliverable; the single word "estimated", or the sanctioned confidence-tag format where the user requires it, is the ceiling. After generating, self-screen: delete every clause that answers a question the user did not ask. Applies to terminal replies and documents alike.
+- Every URL written into an artifact is verified reachable first (fetch it; for internal sites use the authenticated tool). A link that cannot be verified is not written. If the check fails in a way that suggests the agent is blocked rather than the link dead, do not write it into the artifact; print it in the terminal for the user to verify themselves.
+
 - Separate what you verified from what you assume. Say "I ran X and saw Y" or "I did not check Z".
 - When something failed, quote the error in a code block. Do not paraphrase errors.
 - When you are not sure, say what you are unsure about and what would settle it. Do not hedge everything equally.

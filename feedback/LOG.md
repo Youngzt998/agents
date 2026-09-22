@@ -149,3 +149,46 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: the trailer came from the coding harness default and was emitted without checking the author's position on attribution. No rules file covered authorship of any artifact.
 - Rule: `rules/00-communication.md` P23.
 - Status: promoted 2026-09-17
+
+### Technical terms translated into Chinese in terminal output
+- Date: 2026-09-18
+- Symptom: wrote "余归纳" for coinductive in a Chinese reply. Earlier instances (recorded in the internal overlay log, 2026-09-14): translated issue/commit/retire/in-flight and spec machine/impl machine into Chinese coinages.
+- Root cause: treating translation as definition. The Language rule already says standard computing terms stay in English inside Chinese sentences; translations keep slipping in for terms that have common Chinese renderings in textbooks.
+- Rule: `rules/00-communication.md` § Language; strengthening proposed 2026-09-18, pending acceptance.
+- Status: open
+
+### Links written into an artifact without reachability self-check
+- Date: 2026-09-18
+- Symptom: a related-work section shipped with 22 embedded links, three DOIs from memory tagged "re-verify on drafting" and a closing offer asking the user whether to verify. User: verify links yourself before writing; if unverifiable, leave them out; if the agent itself is likely blocked by the site, print the link in the terminal for the user to check.
+- Root cause: treated link verification as a follow-up step to offer instead of a precondition for writing.
+- Rule: `rules/00-communication.md` § Claims, added same day per the user's dictated behavior: every URL written into any artifact is fetched first; unreachable or unverifiable links are not written; when the failure is plausibly a bot block, the URL goes to the terminal for the user to verify instead.
+- Status: promoted 2026-09-18
+
+### Modified a file without first checking for the user's own edits
+- Date: 2026-09-18
+- Symptom: repeated edits to a shared working document; the user had to warn that they edit it between my writes.
+- Root cause: no re-read step before writing; stale in-context copy treated as current.
+- Rule: `rules/20-code-design.md` § Change hygiene, added same day per the user's dictated behavior: before every edit to a file the user also works on, re-read it (or diff against the last-seen state) and preserve their changes; skip only when the user has declared fully automatic iteration on that file.
+- Status: promoted 2026-09-18
+
+### Local file paths in a standalone human-facing document
+- Date: 2026-09-18
+- Symptom: a design document destined for copy-paste into docx said "see `paper/title.md`" and listed local working files as "writing sources of truth". The reader of the standalone document cannot open those paths.
+- Root cause: no classification step before writing. Three document classes exist — code-adjacent docs (local paths fine), agent working notes (paths fine), standalone documents for human readers (must be self-contained) — and the text was generated without deciding which class the target belongs to.
+- Rule: `rules/10-writing-docs.md`, added same day per the user's dictated behavior.
+- Status: promoted 2026-09-18
+- Recurrence 2026-09-18 (same day, "Local file paths in a standalone document" root cause, second form): the agent's own operating rules (byline policy, "proved" discipline, measurement metadata, banned words) were pasted into the design document body as a "Conventions" bullet. Agent-layer material — rules, evidence tags, working conventions — never belongs in a class-(c) standalone document. Rule text in 10-writing-docs.md extended accordingly.
+
+### Reasoning residue in generated text
+- Date: 2026-09-18
+- Symptom: a venue list that was asked to contain only submission dates in order also carried provenance and method clauses ("confirmed on the conference site", "from the usual round-2 month; not yet announced").
+- Root cause: chain-of-thought content (how a fact was obtained, how an estimate was made) leaked into the deliverable. The task defines the content; reasoning stays out.
+- Rule: `rules/00-communication.md` § Claims extension, added same day per the user's dictated behavior: generated text contains exactly what the task asked for; provenance, method notes, and verification narratives stay out of artifacts (the single word "estimated", or the user's sanctioned confidence-tag format where it applies, is the ceiling). If one-shot generation cannot guarantee this, run a self-screen pass after generating and delete every clause that answers a question the user did not ask. Applies to terminal replies and documents alike.
+- Status: promoted 2026-09-18
+
+### Undictated TODO sections written into a user-led document
+- Date: 2026-09-22
+- Symptom: a user-led theory document acquired a "Storage and update points" section, two TODO sections, and a granularity section the user never asked for; the user had asked only for the loop example and its symbol annotations.
+- Root cause: scaffolding habit applied to a user-led document. In a user-led document even a placeholder needs the user's instruction; open questions belong in the assistant's memory, from where they can be raised in conversation.
+- Rule: `rules/50-scaffolding.md`, added same day per the user's dictated behavior.
+- Status: promoted 2026-09-22

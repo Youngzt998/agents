@@ -16,6 +16,8 @@ Non-technical words: the simplest everyday word. Computing words: the standard t
 
 ## Before writing
 
+- Classify the document first, and say the class to yourself before the first sentence: (a) code-adjacent (README, module doc — repo paths allowed), (b) agent or personal working note (paths allowed), (c) standalone document for human readers (design doc, report, wiki page, anything to be pasted elsewhere). A class-(c) document is self-contained end to end: no local file paths, no references to material the reader cannot open from where they sit; inline the content or link a reachable URL instead. It also contains no agent-layer material: none of these rules, no writing conventions, no evidence-level tags, no notes about how the text was produced.
+
 - Name the reader in one line at the top: who they are, what they already know, what they need to do after reading.
 - Write the outline first. Show it to the user. Do not draft prose before the outline is accepted. (Procedure: `workflows/write-doc.md`)
 
