@@ -220,3 +220,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: reaching for the concrete example as the default explanation device, ignoring where the reader currently is in the document.
 - Rule: none yet; second occurrence gets rule text per the workflow.
 - Status: open
+
+### Proof burden treated as an algorithm-design criterion
+- Date: 2026-09-23
+- Symptom: a storage-scheme comparison listed "the refinement's proof obligation" as one of the two trade-off axes; the user corrected: the axes are register cost and extra computation; how the correctness proof goes is not part of algorithm design.
+- Root cause: verification-project habit of weighing proof engineering in every decision; the user separates the two concerns: design first on runtime costs, prove whatever was designed.
+- Rule: none yet.
+- Status: open
