@@ -213,3 +213,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: the document's formula convention (LaTeX for VS Code preview) carried over into terminal conversation, a channel whose renderer does not parse LaTeX.
 - Rule: `rules/05-terminal-output.md` rule 7, added same day per the user's dictated behavior.
 - Status: promoted 2026-09-23
+
+### Explaining with material the reader has not reached
+- Date: 2026-09-23
+- Symptom: an abstract-notation question was answered with the document's running-example loop names; the user had not yet read the example section (their ready-to-read marker sat above it) and had already once asked for pure-prose explanation.
+- Root cause: reaching for the concrete example as the default explanation device, ignoring where the reader currently is in the document.
+- Rule: none yet; second occurrence gets rule text per the workflow.
+- Status: open
