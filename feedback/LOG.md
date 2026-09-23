@@ -206,3 +206,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: the habit of attaching a proof sketch to a fact the reader can check in one step. The document needed the fact; the justification had already been given in conversation and belongs there.
 - Rule: covered by `rules/10-writing-docs.md` P25 (name the parameters, do not teach the arithmetic) read broadly: a one-step justification clause is the same habit as taught arithmetic. No new rule text added.
 - Status: logged 2026-09-23
+
+### LaTeX math written into terminal messages
+- Date: 2026-09-23
+- Symptom: terminal replies used $...$ inline math (symbols like $N_{L,e}$); the terminal renders markdown only, so the user saw raw dollar-sign source.
+- Root cause: the document's formula convention (LaTeX for VS Code preview) carried over into terminal conversation, a channel whose renderer does not parse LaTeX.
+- Rule: `rules/05-terminal-output.md` rule 7, added same day per the user's dictated behavior.
+- Status: promoted 2026-09-23

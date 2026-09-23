@@ -74,3 +74,9 @@ Two kinds of words, two rules.
 - Banned everywhere: literary or ornamental words ("elegant", "graceful", "orchestrate", "weave", "journey", "landscape", "under the hood") and metaphors or analogies of any kind ("acts as a gatekeeper", "the glue between", "a bridge to", "like a traffic light"). Say what the thing does.
 - Rewrite: "the scheduler orchestrates the workers" becomes "the scheduler decides which worker runs next and when".
 - Codes and shorthand defined only in this rules repo count as coined terms. The one approved shorthand is the evidence level, written "(置信等级-N)" per `rules/40-evidence-levels.md`. Any other private code is written out in plain words.
+
+## 7. No LaTeX in terminal messages
+
+The terminal renders markdown and nothing else. Write mathematics in plain text: `r_L`, `σ_L[i]`, `N·j − (N−K)`, `L^(k)`, backticks or bare. The `$...$` and `$$...$$` forms belong only to artifacts whose renderer parses them (markdown files read in VS Code preview, documents converted with pandoc).
+
+Author: "terminal里不要用$xxx$公式，根本解析不了只能看到纯文本" (English: "do not use $xxx$ formulas in the terminal; nothing parses them and I only see plain text").
