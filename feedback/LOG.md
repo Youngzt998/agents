@@ -192,3 +192,17 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: scaffolding habit applied to a user-led document. In a user-led document even a placeholder needs the user's instruction; open questions belong in the assistant's memory, from where they can be raised in conversation.
 - Rule: `rules/50-scaffolding.md`, added same day per the user's dictated behavior.
 - Status: promoted 2026-09-22
+
+### Working-process notes written into a real design document
+- Date: 2026-09-22
+- Symptom: the algorithm design document carried a "Status: working draft, the assistant fills details only on instruction" line, "(new)/(proposed)/confirmed before use" markers, "deferred/TODO" process remarks, and an annotation-style paragraph about how the assistant writes thresholds. The user deleted them all and banned the habit: DO NOT PUT any WORKING NOTES / LOGS INTO ACTUAL design docs / papers.
+- Root cause: recurrence of the class-(c) rule (agent-layer material in standalone documents), in a new form: process metadata (status lines, confirmation markers, collaboration protocol) rather than paths or conventions.
+- Rule: `rules/10-writing-docs.md` class-(c) clause extended same day: no status lines, no draft/process markers, no confirmation tags, no notes on the collaboration protocol; working records live in the assistant's memory or the user's notes directory only.
+- Status: promoted 2026-09-22
+
+### Justifying clause appended to a stated fact
+- Date: 2026-09-23
+- Symptom: a setting sentence stated "n >= m holds by construction" and the assistant appended ", since p sits inside every shared level"; the user cut the since-clause silently in the working tree.
+- Root cause: the habit of attaching a proof sketch to a fact the reader can check in one step. The document needed the fact; the justification had already been given in conversation and belongs there.
+- Rule: covered by `rules/10-writing-docs.md` P25 (name the parameters, do not teach the arithmetic) read broadly: a one-step justification clause is the same habit as taught arithmetic. No new rule text added.
+- Status: logged 2026-09-23
