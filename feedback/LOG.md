@@ -248,3 +248,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: path style copied from single-repo sessions, where repo-relative is unambiguous; with multiple checkouts the root must be named.
 - Rule: rules/05-terminal-output.md rule 8, added same day per the user's dictated format.
 - Status: promoted 2026-09-25
+
+### Capability gap and policy gate merged into one summary label
+- Date: 2026-09-25
+- Symptom: a tool's limits were summarized as "half missing capability, half deliberate withholding" without saying which piece of information each half applies to; the user had to ask whether the tool computes the full answer and drops it, or never computes it.
+- Root cause: summarizing mechanism-level findings by their effect (no output) instead of by the data object each mechanism touches; the two mechanisms act on different objects (the full vector is never computed; the direction fact is computed and suppressed).
+- Rule: none yet.
+- Status: open
