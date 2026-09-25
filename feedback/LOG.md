@@ -227,3 +227,24 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: verification-project habit of weighing proof engineering in every decision; the user separates the two concerns: design first on runtime costs, prove whatever was designed.
 - Rule: none yet.
 - Status: open
+
+### "Move to the doc" read as cut when the source was a coordination draft
+- Date: 2026-09-23
+- Symptom: asked to move coordinated draft content into the document, the assistant copied it and then deleted it from the scratch draft; the user corrected: move meant copy-paste, the draft stays.
+- Root cause: "move" taken in the file-operation sense, copy then delete; a working draft the user keeps editing is a record, and promotion into the artifact leaves it in place.
+- Rule: none yet; first occurrence.
+- Status: open
+
+### New notation invented while explaining, instead of writing the thing
+- Date: 2026-09-24
+- Symptom: explaining one stored value, the assistant introduced angle-bracket addressing, then a fresh S_k(p) symbol; the user rejected both: write what the value is, add no symbols.
+- Root cause: reaching for compact notation as the default explanation device; in a step-by-step comprehension session the phrase itself ("total child rounds at the start of parent round p") is the clearer operand.
+- Rule: covered by rules/00-communication.md Words ("do not invent names during a session"); occurrence noted, symbols also count.
+- Status: logged 2026-09-24
+
+### File pointers without the owning project's name
+- Date: 2026-09-25
+- Symptom: replies pointed at files with bare repo-relative paths or bare filenames ("Allocator.lean:203"), while several repositories were in play; the user could not tell which project root a path hangs off, and one filename existed in two repos at once.
+- Root cause: path style copied from single-repo sessions, where repo-relative is unambiguous; with multiple checkouts the root must be named.
+- Rule: rules/05-terminal-output.md rule 8, added same day per the user's dictated format.
+- Status: promoted 2026-09-25

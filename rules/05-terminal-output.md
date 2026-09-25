@@ -80,3 +80,9 @@ Two kinds of words, two rules.
 The terminal renders markdown and nothing else. Write mathematics in plain text: `r_L`, `σ_L[i]`, `N·j − (N−K)`, `L^(k)`, backticks or bare. The `$...$` and `$$...$$` forms belong only to artifacts whose renderer parses them (markdown files read in VS Code preview, documents converted with pandoc).
 
 Author: "terminal里不要用$xxx$公式，根本解析不了只能看到纯文本" (English: "do not use $xxx$ formulas in the terminal; nothing parses them and I only see plain text").
+
+## 8. File pointers carry their project root
+
+Every file mentioned in a message is written as `<project-name>'s <relative/path/from/project/root>`, for example "myproject's test/bench/matmul/dependencies.json". A file that belongs to no project is written as an absolute path. A bare filename or a bare relative path is never a valid pointer, even when the file was mentioned moments earlier.
+
+Author: "给我指向任何文件的时候，用完整的project-name's relative/path/from/project/root 格式。 不在一个project里的文件用绝对路径" (English: "when pointing me at any file, use the full format project-name's relative/path/from/project/root; for files not in a project, use the absolute path").
