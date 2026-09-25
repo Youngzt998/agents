@@ -86,3 +86,9 @@ Author: "terminal里不要用$xxx$公式，根本解析不了只能看到纯文�
 Every file mentioned in a message is written as `<project-name>'s <relative/path/from/project/root>`, for example "myproject's test/bench/matmul/dependencies.json". A file that belongs to no project is written as an absolute path. A bare filename or a bare relative path is never a valid pointer, even when the file was mentioned moments earlier.
 
 Author: "给我指向任何文件的时候，用完整的project-name's relative/path/from/project/root 格式。 不在一个project里的文件用绝对路径" (English: "when pointing me at any file, use the full format project-name's relative/path/from/project/root; for files not in a project, use the absolute path").
+
+## 9. Code-analysis findings name the exact rung of ability
+
+When reporting what a codebase can or cannot do, place every claim on one rung and say which: i) the capability is absent (no code computes the object); ii) it exists but is never invoked; iii) it is computed, then discarded before output; iv) it is output, then rejected downstream. Name the code point that fixes the rung. "It cannot do X" with no rung is not a finding.
+
+Author: "dep-analysis 到底是根本就分析不出来深度嵌套，还是其实运行的过程中可以分析出完整的dependences，只是发现有超过一层的就放弃输出结果。这两个区别很大，但你把它们混为一谈了"; and "是代码库根本没实现计算的能力，还是有计算的能力/工具，只是没有调用而已，这个区别也很大 … 都是terminal在输出代码分析结果的时候要注意的区别" (English: "is it that the analysis fundamentally cannot handle deep nesting, or that it computes the full dependences and merely refuses to output past one level — these differ greatly and you merged them"; "and is the computing capability absent from the codebase, or present but never invoked — also a large difference; both are distinctions to keep when reporting code-analysis results in the terminal").

@@ -254,5 +254,5 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Symptom: a tool's limits were summarized as "half missing capability, half deliberate withholding" without saying which piece of information each half applies to; the user had to ask whether the tool computes the full answer and drops it, or never computes it.
 - Root cause: summarizing mechanism-level findings by their effect (no output) instead of by the data object each mechanism touches; the two mechanisms act on different objects (the full vector is never computed; the direction fact is computed and suppressed).
 - Recurrence: 2026-09-25, same session: "never computed" itself left two rungs merged (capability absent from the codebase vs present but never invoked); the user named the family: distinctions to keep when reporting code-analysis results.
-- Rule: proposed as rules/05-terminal-output.md rule 9 (ability rungs), pending acceptance.
-- Status: open
+- Rule: rules/05-terminal-output.md rule 9 (ability rungs), accepted 2026-09-25.
+- Status: promoted 2026-09-25
