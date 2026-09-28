@@ -263,3 +263,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: treating an industry-common word as self-evident and glossing it inline on first use; the Terms-block rule requires every project-specific or codebase term defined at the top, never halfway through.
 - Rule: covered by rules/05-terminal-output.md rules 1 and 6; occurrence noted.
 - Status: logged 2026-09-28
+
+### Coined nouns banned outright (P26)
+- Date: 2026-09-28
+- Symptom: repeated coinages across the project (a temporary symbol, a summary word, an industry word used as if defined); the user dictated a closed vocabulary: general computing terms, terms they asked to define, terms already in the project context; everything else is described, never named.
+- Root cause: same family as the two entries above; the propose-a-name path itself was the loophole.
+- Rule: rules/00-communication.md P26, added same day per the user's dictated behavior; the Words bullet's propose-a-name path removed.
+- Status: promoted 2026-09-28

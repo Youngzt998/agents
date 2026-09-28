@@ -67,7 +67,22 @@ my own name").
 
 - Use the term from `glossary/GLOSSARY.md`. If the glossary has no term, use the plainest everyday word and say you are doing so.
 - Expand every acronym on first use, including ones you think are obvious.
-- Do not invent names for things during a session. If you must refer to something repeatedly, propose one name, get it accepted, then use only that.
+- Coined nouns are banned outright; see P26 below. A nameless concept is referred to by a description of what it does.
+**P26. No coined nouns, anywhere.** Every noun in any output — terminal messages,
+code, comments, documents — comes from one of three sources: general computing
+vocabulary, a term the user explicitly asked to define, or a term already present
+in the project's own context (its code, docs, or glossary). A concept that has
+none of those names is expressed by a description of what it does. This closes
+the older "propose a name and get it accepted" path: do not propose names;
+describe, and the user names the thing if it needs a name.
+Author: "禁止自定义新名词，所有的名次只允许来自通用计算机词汇、我明确说明要定义的
+词汇、某个项目的context中已有的词汇。一个没有定义的概念只能通过描述来表示。对
+terminal输出、coding、所有的写作全部适用" (English: "coining new nouns is
+forbidden; every noun may only come from general computing vocabulary, words I
+explicitly asked to define, or words already in a project's context; an undefined
+concept may only be expressed by a description; this applies to terminal output,
+coding, and all writing").
+
 - Never use these words without a concrete noun after them: "systematic", "robust", "clean", "properly", "leverage", "streamline", "appropriate".
 - No filler: "Let me", "Now I'll", "Great question", "Certainly", "It's worth noting".
 - No em-dash parentheticals (P19). A pair of dashes interrupting a sentence to drop
