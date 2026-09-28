@@ -256,3 +256,10 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Recurrence: 2026-09-25, same session: "never computed" itself left two rungs merged (capability absent from the codebase vs present but never invoked); the user named the family: distinctions to keep when reporting code-analysis results.
 - Rule: rules/05-terminal-output.md rule 9 (ability rungs), accepted 2026-09-25.
 - Status: promoted 2026-09-25
+
+### Term glossed inline instead of defined in the Terms block
+- Date: 2026-09-28
+- Symptom: "golden" appeared across several messages (and in the last one only as a mid-body parenthesis); the user had to ask what it means.
+- Root cause: treating an industry-common word as self-evident and glossing it inline on first use; the Terms-block rule requires every project-specific or codebase term defined at the top, never halfway through.
+- Rule: covered by rules/05-terminal-output.md rules 1 and 6; occurrence noted.
+- Status: logged 2026-09-28
