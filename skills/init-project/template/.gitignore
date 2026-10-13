@@ -1,0 +1,5 @@
+# The project repo checkout. setup/bootstrap.sh recreates it.
+/__PROJECT_NAME__/
+
+# Python environment, when setup/bootstrap.sh creates one
+/.venv/

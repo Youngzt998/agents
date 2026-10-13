@@ -26,6 +26,7 @@ the conflicting rules while it is in effect").
 5. `~/.agents/rules/30-terminology.md`
 6. `~/.agents/rules/40-evidence-levels.md`
 7. `~/.agents/rules/50-scaffolding.md`
+8. `~/.agents/rules/60-project-repos.md`
 
 ## 2. On-demand rules (routing table)
 

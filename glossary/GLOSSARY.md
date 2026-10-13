@@ -52,6 +52,12 @@ A dated record in `feedback/LOG.md`: what went wrong, why, and which rule should
 ### overlay repo
 A private rules repo whose entry file imports this repo and adds machine-local or employer-internal rules, glossary entries, and project cards on top.
 
+### design repo
+A project's personal git repository: documents, slides, paper drafts and AI workflows. The project repo is checked out inside its working directory and gitignored. Rule in `rules/60-project-repos.md`.
+
+### project repo
+The git repository that holds a project's code. Locally it is checked out inside the project's design repo.
+
 ## Abbreviations allowed everywhere
 
 Per `rules/05-terminal-output.md` rule 5. Any abbreviation missing here and from the project card is written out in full.

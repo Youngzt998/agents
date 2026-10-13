@@ -270,3 +270,12 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: same family as the two entries above; the propose-a-name path itself was the loophole.
 - Rule: rules/00-communication.md P26, added same day per the user's dictated behavior; the Words bullet's propose-a-name path removed.
 - Status: promoted 2026-09-28
+
+## 2026-10-13
+
+### Project design and project code kept in two repositories
+- Date: 2026-10-13
+- Symptom: after one project's design files were given their own repository, with the code checkout gitignored inside it, the user asked for this arrangement to become the mode for every personal project. User: 把这个工作模式创建为我个人的所有的项目开发一种模式，就是项目设计和项目代码本身两个git repo做分离，设计repo作为personal的文档、slides making、paper writting。启动方式为在prompt里面/init-project  然后告知项目repo和设计repo的remote链接 (English: "make this way of working the mode for all of my personal projects: project design and project code are two separate git repos, and the design repo holds personal documents, slide making and paper writing; it is started by typing /init-project and giving the remotes of the project repo and the design repo").
+- Root cause: none. This records a new working pattern; nothing went wrong.
+- Rule: `rules/60-project-repos.md`, carried out by `workflows/init-project.md` and `skills/init-project/`; glossary entries "design repo" and "project repo".
+- Status: promoted 2026-10-13
