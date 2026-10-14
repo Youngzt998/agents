@@ -4,8 +4,8 @@
   code. The design repo holds the author's personal documents, slides, paper
   drafts and AI workflows.
 - The project repo is checked out inside the design repo's working directory
-  and listed in its `.gitignore`. Nothing from the project repo is committed to
-  the design repo.
+  and listed in its `.gitignore`. Code from the project repo is never
+  committed to the design repo.
 - Cloning the design repo and running `setup/bootstrap.sh` recreates the
   checkouts and the environment on a new machine.
 - `/init-project <project-repo-remote> <design-repo-remote>` starts a project,
