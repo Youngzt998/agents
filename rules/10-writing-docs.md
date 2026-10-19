@@ -14,6 +14,12 @@ Non-technical words: the simplest everyday word. Computing words: the standard t
 - Standard terms may be used without definition, but if the reader named in the audience line would not know one, define it.
 - Literary words and all metaphors or analogies are banned. Say what the thing does. "The cache sits between the engine and memory and keeps recent values" is allowed. "The cache is the bridge to memory" is banned.
 
+## Rule 4: an HTML deliverable is a plain page
+
+An HTML file written for the author is a plain, single-column page that reads top to bottom and can be screenshotted or converted to PDF as it is. Nothing on the page scrolls sideways: a figure, table or drawing wider than the page is scaled to the page width or laid out in several rows. The page has no scrollable boxes, no interactive controls, and no content that appears only on hover or click. The author lifts this default only by saying so for a particular file.
+
+Author (2026-10-19): "那个抽象图你不要做成左右滚动的（以后默认html的时候我没说都不要这样，默认只做成plain形式，可以直接截图/转化成pdf的那种）" (English: "do not make that abstract figure scroll left and right; from now on, unless I say otherwise, no HTML does this; the default is a plain form that can be screenshotted or converted to PDF directly").
+
 ## Before writing
 
 - Classify the document first, and say the class to yourself before the first sentence: (a) code-adjacent (README, module doc — repo paths allowed), (b) agent or personal working note (paths allowed), (c) standalone document for human readers (design doc, report, wiki page, anything to be pasted elsewhere). A class-(c) document is self-contained end to end: no local file paths, no references to material the reader cannot open from where they sit; inline the content or link a reachable URL instead. It also contains no agent-layer material: none of these rules, no writing conventions, no evidence-level tags, no notes about how the text was produced. Working records are banned in the same way: no status lines, no draft or process markers such as (new), (proposed), or confirmed-on-date, and no description of the collaboration protocol; those live in memory or in a working-notes file.
