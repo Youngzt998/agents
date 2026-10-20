@@ -279,3 +279,12 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: none. This records a new working pattern; nothing went wrong.
 - Rule: `rules/60-project-repos.md`, carried out by `workflows/init-project.md` and `skills/init-project/`; glossary entries "design repo" and "project repo".
 - Status: promoted 2026-10-13
+
+## 2026-10-20
+
+### Answer ordered by where the facts came from, not by what depends on them
+- Date: 2026-10-20
+- Symptom: one design question was answered with eight equally weighted bolded sections each carrying a per-claim evidence tag, and every later batch of delegated-search results arrived as its own full-length message. The user could not locate the load-bearing part. User: 你的输出信息量过于爆炸了，结果我抓不到重点。你按照结构重要性做个排序 (English: "your output's information volume is exploding, so I cannot catch the key point; rank it by structural importance").
+- Root cause: the answer took the shape of the investigation, one section per document read and one message per delegated search that returned, so supporting detail and load-bearing decisions got equal prominence and the ranking was restated three times instead of consolidated once. A design answer is ordered by how many other decisions each item forces.
+- Rule: none yet.
+- Status: open
