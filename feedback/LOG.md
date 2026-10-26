@@ -288,3 +288,12 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: the answer took the shape of the investigation, one section per document read and one message per delegated search that returned, so supporting detail and load-bearing decisions got equal prominence and the ranking was restated three times instead of consolidated once. A design answer is ordered by how many other decisions each item forces.
 - Rule: none yet.
 - Status: open
+
+## 2026-10-26
+
+### Instructions from a design file copied onto the artifact they describe
+- Date: 2026-10-26
+- Symptom: asked for an HTML slide template following the user's plain-text design file, the assistant showed the file's planning lines as gray italic notes and the user's draft bullets as slide text, and titled most slides "Slide title". The notes held content instructions, bare TODO markers, "(optional, to be decided)" and a line saying which of two talks a slide is for. User: 你理解错了，我的意思是html里面是我正式要画的slides的样子，正文应该是slides' page by page，有方框的。内容先都做成place holder，每个page的title可以加。 (English: "You misunderstood. I mean the HTML shows what my real slides will look like. The body should be the slides, page by page, framed. Make all content placeholders for now; you may add a title to each page.")
+- Root cause: the assistant read `rules/50-scaffolding.md` § User-led documents literally, as "use only the user's words", and the design file was the only source of such words. The file's text is addressed to whoever builds the slides, so copying that text onto the slides put instructions where content belongs. The user wanted the slides as they will be presented: one framed page per slide, a title written from the design file, and a placeholder in every content slot.
+- Rule: none yet; first occurrence.
+- Status: open
