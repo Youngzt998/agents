@@ -53,10 +53,13 @@ A dated record in `feedback/LOG.md`: what went wrong, why, and which rule should
 A private rules repo whose entry file imports this repo and adds machine-local or employer-internal rules, glossary entries, and project cards on top.
 
 ### design repo
-A project's personal git repository: documents, slides, paper drafts and AI workflows. The project repo is checked out inside its working directory and gitignored. Rule in `rules/60-project-repos.md`.
+A project's personal git repository: documents, slides and AI workflows. The project repo, and the paper repo when the project has one, are checked out inside its working directory and gitignored. Rule in `rules/60-project-repos.md`.
 
 ### project repo
 The git repository that holds a project's code. Locally it is checked out inside the project's design repo.
+
+### paper repo
+The optional git repository that holds a project's paper, its LaTeX source. Locally it is checked out at `paper/` inside the project's design repo.
 
 ## Abbreviations allowed everywhere
 

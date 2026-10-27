@@ -297,3 +297,12 @@ Review weekly. Any pattern with two or more `open` entries gets promoted.
 - Root cause: the assistant read `rules/50-scaffolding.md` § User-led documents literally, as "use only the user's words", and the design file was the only source of such words. The file's text is addressed to whoever builds the slides, so copying that text onto the slides put instructions where content belongs. The user wanted the slides as they will be presented: one framed page per slide, a title written from the design file, and a placeholder in every content slot.
 - Rule: none yet; first occurrence.
 - Status: open
+
+## 2026-10-27
+
+### Paper source kept in an optional third repository
+- Date: 2026-10-27
+- Symptom: one project's paper source already lived in its own repository, checked out at `paper/` inside the design repo and gitignored, while the init-project template still gave every design repo a tracked `paper/` directory for drafts. The user asked for the separate checkout to become the rule. User: 说明paper writting要作为一个optional的子repo放在design repo下面，就像coding repo一样 (English: "state that paper writing goes in an optional sub-repo under the design repo, the same as the code repo").
+- Root cause: none. This records a change to a working pattern; nothing went wrong.
+- Rule: `rules/60-project-repos.md`, carried out by `workflows/init-project.md` and `skills/init-project/` (template `.gitignore`, `setup/config.sh`, `setup/bootstrap.sh`, `CLAUDE.md`, `README.md`); glossary entries "design repo" and "paper repo".
+- Status: promoted 2026-10-27

@@ -1,7 +1,8 @@
 # __DESIGN_NAME__
 
 Design repo for __PROJECT_NAME__ (__PROJECT_URL__). The project repo is checked
-out at `__PROJECT_NAME__/` and gitignored.
+out at `__PROJECT_NAME__/` and gitignored. A paper repo, when `PAPER_URL` in
+`setup/config.sh` names one, is checked out at `paper/` and gitignored as well.
 
 ## Set up a machine
 

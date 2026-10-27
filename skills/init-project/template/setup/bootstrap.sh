@@ -3,8 +3,9 @@
 # Usage: bash setup/bootstrap.sh
 #
 # 1. clones the project repo into <project-name>/
-# 2. runs the project-specific setup steps
-# 3. links Claude Code's project memory for this directory to memory/
+# 2. clones the paper repo into paper/, when config.sh sets PAPER_URL
+# 3. runs the project-specific setup steps
+# 4. links Claude Code's project memory for this directory to memory/
 set -euo pipefail
 
 DESIGN_REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
@@ -19,6 +20,17 @@ if [ -d "$DESIGN_REPO/$PROJECT_NAME/.git" ]; then
   log "ok      $PROJECT_NAME/ already cloned"
 else
   git clone "$PROJECT_URL" "$DESIGN_REPO/$PROJECT_NAME"
+fi
+
+section "Paper repo (paper/)"
+if [ -z "${PAPER_URL:-}" ]; then
+  log "skip    no paper repo: PAPER_URL in setup/config.sh is empty"
+elif [ -d "$DESIGN_REPO/paper/.git" ]; then
+  log "ok      paper/ already cloned"
+elif [ -n "$(ls -A "$DESIGN_REPO/paper" 2>/dev/null)" ]; then
+  log "todo    paper/ holds files outside a git checkout; move them into the paper repo, remove paper/, rerun"
+else
+  git clone "$PAPER_URL" "$DESIGN_REPO/paper"
 fi
 
 # project_setup: the environment this project needs beyond its checkout.

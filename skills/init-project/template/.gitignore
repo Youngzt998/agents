@@ -1,5 +1,9 @@
 # The project repo checkout. setup/bootstrap.sh recreates it.
 /__PROJECT_NAME__/
 
+# The paper repo checkout, when setup/config.sh sets PAPER_URL.
+# setup/bootstrap.sh recreates it.
+/paper/
+
 # Python environment, when setup/bootstrap.sh creates one
 /.venv/
