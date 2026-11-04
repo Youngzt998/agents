@@ -58,6 +58,38 @@ A project's personal git repository: documents, slides, paper drafts and AI work
 ### project repo
 The git repository that holds a project's code. Locally it is checked out inside the project's design repo.
 
+## Compiler scheduling vocabulary
+
+### ASAP timing
+The earliest start cycle of each instruction computed from dependence latencies alone, with no resource limits. Used as a timing estimate before real scheduling.
+
+### basic block
+A straight-line instruction sequence with one entry and one exit. Local scheduling works on one basic block at a time.
+
+### functional unit
+A hardware execution resource, such as a multiplier, an adder, or a load/store unit, that executes one instruction of its class per issue cycle.
+
+### list scheduling
+A greedy scheduler that keeps the ready instructions in a priority queue, repeatedly picks the highest-priority one, and places it in the earliest legal cycle on a compatible functional unit.
+
+### register pressure
+The number of values live at the same time at a program point, measured against the register count. Excess pressure forces spills to memory.
+
+### VLIW (very long instruction word)
+An architecture whose instruction word carries several operations issued in the same cycle; the compiler decides which operations run in parallel.
+
+### megakernel
+One device program that runs a whole sequence of operators (a decoder layer, several layers, or a full forward step) as a single kernel. The work of every operator is scheduled inside the program and the operators synchronize through on-device signals (semaphores, flags, or queues), so no kernel boundary drains the device between operators. The GPU form is a persistent kernel with an on-device scheduler; on Trainium the NKI form is one kernel whose engine instruction streams cover all the operators.
+Do not use: "fused kernel" for the multi-operator program (fusion names the compiler transformation, the megakernel names the program).
+
+## Assistant tooling vocabulary
+
+### Model Context Protocol (MCP)
+An open protocol by which an AI assistant discovers and calls tools exposed by a separate server process, over stdio or HTTP. Each client lists its servers in its own config (Claude Code: `mcpServers` in `~/.claude.json`). Write the term in full; "MCP" is not on the abbreviation allowlist.
+
+### hook (Claude Code)
+A command, listed under `hooks` in a Claude Code settings file, that Claude Code runs at a named point of a session (a Stop hook at the end of each assistant turn, a SubagentStop hook when a subagent finishes, a PreToolUse hook before a tool call). Claude Code reads the hook list when a session starts, so a change applies to sessions started afterwards. Hook scripts of this repo live in `hooks/` and are symlinked into `~/.claude/hooks/` by `install.sh`.
+
 ## Abbreviations allowed everywhere
 
 Per `rules/05-terminal-output.md` rule 5. Any abbreviation missing here and from the project card is written out in full.

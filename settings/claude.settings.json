@@ -1,5 +1,32 @@
 {
   "permissions": {
     "allow": []
+  },
+  "env": {
+    "CLAUDE_CODE_TODO_REMINDER_MODE": "off"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/archive-completed-tasks.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hooks/archive-completed-tasks.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
   }
 }

@@ -69,6 +69,8 @@ link_each "$REPO/agents"   "$CLAUDE_DIR/agents"   '*.md'
 prune_dangling "$CLAUDE_DIR/agents"
 link_each "$REPO/commands" "$CLAUDE_DIR/commands" '*.md'
 prune_dangling "$CLAUDE_DIR/commands"
+link_each "$REPO/hooks"    "$CLAUDE_DIR/hooks"    '*'
+prune_dangling "$CLAUDE_DIR/hooks"
 
 # settings.json is merged, not symlinked: Claude Code writes back to it
 # (/model, /config), which would leave the repo permanently dirty.
