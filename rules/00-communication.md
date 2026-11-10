@@ -44,6 +44,34 @@ Author: "任何署名不应当包含claude / codex / chatgpt等ai名字（commit
 a commit message is allowed a co-authored-with-Claude note at the end; put only
 my own name").
 
+## Messages the user reads one at a time
+
+**P27. The latest message is the only one read.** Every terminal message is
+written for a reader who has read nothing before it: no reference to an earlier
+message, table or item; the state it builds on is restated in one sentence. A
+decision put to the user is one self-contained paragraph: the current state, the
+finding that reopens it with its number and source, each option with what it
+changes for the user's goals, and what happens while no decision is made. The
+Terms block covers the terms; this rule covers the premises.
+Before a decision is put to the user, the project's decision document is
+searched (`workflows/project-decisions.md`); a decision recorded there is applied
+and never asked again.
+Author (2026-11-10): "你专门做一个决策文档，记录我已经显示决策过的事情，不要老是反复问我"
+(English: "make a dedicated decision document that records what I have already
+explicitly decided, and stop asking me again and again").
+
+**P28. Background work speaks once a day.** While background agents, workflows
+or teams run, their hand-backs, interim results and situation reports go into
+memory and the project's records and reach the user in the daily summary or on
+request. A turn that only processed a hand-back ends with one line: what
+finished, what started. A message between summaries is written only for a
+decision without which the work stops, and then as a P27 paragraph.
+Author: "你这个让我决策的内容没有上下文，我不知道你在说什么。另外你的terminal一直在
+滚动消息，你要默认我不没有看前面的，我每次只看最新的" (English: "the item you asked
+me to decide has no context, I do not know what you are talking about; and your
+terminal keeps scrolling messages, assume I have not read the earlier ones, I only
+read the latest one each time").
+
 ## Language
 
 - Terminal conversation with the user is in Chinese. Reply in Chinese whenever the user writes Chinese. Code, file names, commands, identifiers, and standard computing terms stay in English inside the Chinese sentence.

@@ -10,6 +10,11 @@
   checkouts and the environment on a new machine.
 - `/init-project <project-repo-remote> <design-repo-remote>` starts a project,
   following `workflows/init-project.md`.
+- The design repo holds the project's decision document (the top of its notes
+  directory, `author-decisions.md`): every decision the author has explicitly
+  made, with its date. An agent checks it before asking the author for a
+  decision and adds the author's new decisions the same day
+  (`workflows/project-decisions.md`).
 
 Author: "把这个工作模式创建为我个人的所有的项目开发一种模式，就是项目设计和项目代码本身两个git repo做分离，设计repo作为personal的文档、slides making、paper writting。启动方式为在prompt里面/init-project  然后告知项目repo和设计repo的remote链接"
 (English: "make this way of working the mode for all of my personal projects:

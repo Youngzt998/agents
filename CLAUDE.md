@@ -31,5 +31,6 @@ A skill the user invokes by hand (a slash command such as `/i-have-adhd`) overri
 - Before drafting or editing an academic paper: follow `skills/paper-writing/SKILL.md`, which routes to the prose, terminology, figure and process rules. Quality checks are `workflows/paper-quality.md`, and they run only when asked.
 - Before writing code that adds a new module, abstraction, or interface: follow `workflows/design-note.md`.
 - Before your final message in a task: run the checklist in `workflows/review-output.md`.
+- Before putting a decision to the user, and after the user decides something: follow `workflows/project-decisions.md` (the project's decision document; a recorded decision is applied, never asked again).
 - When the user says you got something wrong: follow `workflows/feedback.md` (it routes the lesson to this repo or to the overlay repo; with no overlay mounted, everything is recorded here).
 - After any edit to this repo: commit and push in the same task; on a rejected push, pull --rebase, resolve conflicts, push again, and report the conflict.
