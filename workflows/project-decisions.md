@@ -22,6 +22,12 @@ It records the user's decisions only, never the agent's own choices.
 
 ## When the user makes a decision
 
+0. Compare the new decision with the recorded ones first. A newer decision
+   supersedes an older one by default. When the new decision conflicts with a
+   recorded one, say so to the user explicitly before recording it: name the
+   earlier decision, its date and what the new one changes, and ask for
+   confirmation; record the new decision as superseding only after the user
+   confirms, and mark the earlier entry as superseded with the date.
 1. The same day, add an entry to the decision document: the date, one sentence
    stating the decision in plain English, one sentence of scope or how to apply
    when the user gave it, and the source (the message, or the memory file that
@@ -38,3 +44,5 @@ It records the user's decisions only, never the agent's own choices.
 (the headings and the usage paragraph); the project fills it as decisions arrive.
 
 Author (2026-11-10): "你专门做一个决策文档，记录我已经显示决策过的事情，不要老是反复问我（也写进agents rule的general 项目开发workflow方式里，就是agent要有一个专门的项目级决策文档，每次问决策的时候先检查文档里是否已经决定过了）" (English: "make a dedicated decision document that records what I have already explicitly decided, and stop asking me again and again; also write it into the general project-development workflow of the agent rules: the agent keeps a dedicated project-level decision document and, every time before asking for a decision, checks whether it was already decided there").
+
+Author (2026-11-10, on conflicts): "你还要注意决策本身是默认新的覆盖旧的，而且每次新决策和旧的有冲突的时候要显示提醒确认" (English: "also note that a decision by default is the new one overriding the old, and every time a new decision conflicts with an old one, remind me explicitly and confirm").
