@@ -561,3 +561,12 @@ Asked to add a comment to a design document, the assistant wrote a quoted paragr
 - Rule: proposed for rules/00-communication.md as P29 (text shown to the author 2026-11-10; applied on acceptance).
 - Recurrence 2026-11-13: a change made in code shared by the reference simulator's loader and the assembler was put to the author as a choice between two "program forms" of some benchmark kernels. The author's model has a source kernel with its gated semantics, a compiler, and a compiled program that alone meets the assembler, so the choice made no sense to them (three follow-up questions). A recorded decision (no change of shared code without the author; additions go into the gating layer) already settled it. Root cause again: the matter was described through the tool object where it was detected, and the decision document was not read against it before the item was written as open.
 - Status: open
+
+## 2026-11-13
+
+### A file pointer written from memory named a path that does not exist
+- Date: 2026-11-13
+- Symptom: a status answer ended with the absolute path of a status page under one project's notes directory; the page lives in another workflow's directory. The author: "neuron-port-status.html 我找不到" (English: "I cannot find neuron-port-status.html").
+- Root cause: the path was assembled from a relative path in a summary of earlier work and the wrong project root, and was not checked on disk before it was printed.
+- Rule: none yet (first occurrence). Candidate for `rules/05-terminal-output.md` rule 8: every path in a message is listed on disk (`ls`) in the same turn before it is printed.
+- Status: open
