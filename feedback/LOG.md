@@ -577,3 +577,10 @@ Asked to add a comment to a design document, the assistant wrote a quoted paragr
 - Root cause: the "3" counted only the questions newly raised by the work in progress, the section also held fourteen older unanswered items, and neither message said which set it counted; the pointer "full text in section 8" made the two sets look like one.
 - Rule: none yet (first occurrence). Candidate for `workflows/project-decisions.md`: a count of open decisions names its scope (new since a date, or all), and the open section separates the items of the work in progress from older items.
 - Status: open
+
+### A requirement to port "our algorithm" delivered as a subset on the host's mechanisms
+- Date: 2026-11-13
+- Symptom: the author asked for our algorithm to be applied inside another compiler. The delivered draft carried three parts of the algorithm, left out the others (among them the cost model's choice to keep the barrier program and the exact wait values), and used the host's own mechanisms where the reference refuses. On kernels where the reference keeps the barrier program the port did not, and the author asked why. The author: "但是我给你提的要求是两边要保持完全一样的算法啊，你这不是我的要求" (English: "but the requirement I gave you was that the two sides keep exactly the same algorithm; this is not my requirement").
+- Root cause: the scope was cut to what fitted the host compiler during planning and the cut was recorded as a list of "known gaps" and, later, as my own reading of a relaxation the author had given for measured times only; at no point was the cut set beside the stated goal as a deviation and put to the author.
+- Rule: none yet (first occurrence). Candidate for `rules/50-scaffolding.md` or `workflows/project-decisions.md`: a delivered artifact that covers less than the stated goal says so in its first report as a deviation from the goal, with the missing parts by name; a relaxation the author gives for one property is never extended to another.
+- Status: open
