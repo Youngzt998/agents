@@ -570,3 +570,10 @@ Asked to add a comment to a design document, the assistant wrote a quoted paragr
 - Root cause: the path was assembled from a relative path in a summary of earlier work and the wrong project root, and was not checked on disk before it was printed.
 - Rule: none yet (first occurrence). Candidate for `rules/05-terminal-output.md` rule 8: every path in a message is listed on disk (`ls`) in the same turn before it is printed.
 - Status: open
+
+### A count of open decisions given without its scope, then a second count on another scope
+- Date: 2026-11-13
+- Symptom: several status lines said "3 items await your decision, full text in section 8 of the decision document"; asked later to summarize the open decisions, I listed all 18 lines of that section. The author: "之前不是说只有三个吗" and "而且我还决定了一个" (English: "didn't you say there were only three before" and "and I decided one of them").
+- Root cause: the "3" counted only the questions newly raised by the work in progress, the section also held fourteen older unanswered items, and neither message said which set it counted; the pointer "full text in section 8" made the two sets look like one.
+- Rule: none yet (first occurrence). Candidate for `workflows/project-decisions.md`: a count of open decisions names its scope (new since a date, or all), and the open section separates the items of the work in progress from older items.
+- Status: open
