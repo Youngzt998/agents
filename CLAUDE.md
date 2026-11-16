@@ -10,6 +10,7 @@ These rules apply to every session. Project-level CLAUDE.md files add to them an
 @~/.agents/rules/40-evidence-levels.md
 @~/.agents/rules/50-scaffolding.md
 @~/.agents/rules/60-project-repos.md
+@~/.agents/rules/70-common-mistakes.md
 
 ## Precedence of manually invoked skills
 
