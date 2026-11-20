@@ -591,3 +591,10 @@ Asked to add a comment to a design document, the assistant wrote a quoted paragr
 - Root cause: the concrete unit was my reading of the principle; it was written into the decision record in the author's voice, and I did not check how the reference semantics executes the case before building on it. A property of the encoding (the assembler's packing) entered the upper-level semantics that way. Related to the entry "A requirement to port 'our algorithm' delivered as a subset on the host's mechanisms": there, too, a reading of mine stood in the record as the author's.
 - Rule: none yet. Candidate for `workflows/project-decisions.md`: an entry of the decision document keeps the author's statement and the session's reading apart, the reading marked as such; a concrete choice derived from a stated principle is checked against the code the principle points to before anything is built on it.
 - Status: open
+
+### A request for the kind of link given before was answered with a link that needs a login
+- Date: 2026-11-20
+- Symptom: the author asked for a link to the cost page of a cloud account and described the kind wanted in one clause: no login through something whose name was misspelled. The session's records held the link an earlier session had given; that link signs in through the employer's account portal and opens the page in one step. The reply gave the cloud console's bare address, which shows a login page in a browser that holds no console session. The author: "这个还是要登陆。之前你给过我一个链接可以直接访问的" (English: "this one still needs a login; earlier you gave me a link that could be opened directly").
+- Root cause: I read the misspelled word as the portal's name and the request as "a link that avoids the portal", and that reading excluded the earlier link. The purpose stated in the same clause was access with no login step. My own check had shown that the bare address needs a login, and the earlier link was the one item on record that met the purpose; I never tested the reading against the purpose.
+- Rule: none yet.
+- Status: open
