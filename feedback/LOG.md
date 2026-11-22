@@ -756,3 +756,10 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Root cause: the session tied the page's structure to the arrival of its content. The scaffolding rule already says the opposite: the structure is made first and every content slot is a placeholder that names what is missing. A request that something appear in a table or a chart is met at once by the column and the bars with placeholders; the numbers replace them as they are measured.
 - Rule: rules/50-scaffolding.md covers it; no change
 - Status: open
+
+### A running session was stopped on one stale reading of a status field, to prevent a failure that had not happened
+- Date: 2026-11-22
+- Symptom: a status file of a long-lived session on another machine read "blocked" with a line that its automatic context compaction had failed on a safety check. The assistant took that as final, told the author that the session was blocked for good, set a bound on the context size of every such session, and, when a second session on a third machine reported a context above the bound, stopped it and started a replacement; the stop ended eleven running workflows there. Minutes later the first session reported that the compaction had gone through by itself. The author, on the stop: "这个停掉的必要性是为什么？不是可以context 压缩吗" (English: "why was stopping it necessary? can the context not be compacted?").
+- Root cause: one reading of a status field, taken during an operation that was still in progress, was treated as an established failure (evidence of the weakest level acted on as if it were a test), and it was then generalized into a preventive rule and a destructive act on another session where no failure had been seen. A second reading a few minutes later, or the smaller test (asking that session to compact), would have settled it at no cost.
+- Rule: rules/40-evidence-levels.md already says to raise a fact's level before a costly act; no change
+- Status: open
