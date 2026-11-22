@@ -749,3 +749,10 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Rule: none yet
 - Status: open
 - Recurrence: 2026-11-22, the same day. A session on a second machine that the assistant alone talks to, by the author's order of the first day of that machine, had stopped working. The assistant put the question "who restarts it" to the author and repeated it in ten messages over twenty-five minutes while that machine's work ran down; the restart was the assistant's by that standing order and by its own recorded procedure. The author: "谁来重启：你来重启" (English: "who restarts it: you restart it").
+
+### A column that the author asked for was planned for a later page, until its numbers stood
+- Date: 2026-11-22
+- Symptom: the author asked that a status page show a second compiler version beside the first. The session ordered the measurements and planned the new column for the page that would follow them. Two and a half hours later the page was unchanged, and the author: "另外我让你4.8 4.7 都要在…的table和柱状图里，你还没修改（没测的用place holder）" (English: "also, I asked that 4.8 and 4.7 both stand in the table and in the bar chart of the page; you have not changed it yet (use a placeholder for what is not measured)").
+- Root cause: the session tied the page's structure to the arrival of its content. The scaffolding rule already says the opposite: the structure is made first and every content slot is a placeholder that names what is missing. A request that something appear in a table or a chart is met at once by the column and the bars with placeholders; the numbers replace them as they are measured.
+- Rule: rules/50-scaffolding.md covers it; no change
+- Status: open
