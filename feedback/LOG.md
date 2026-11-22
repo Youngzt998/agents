@@ -741,3 +741,10 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Root cause: the two facts came from one hand-back and I set them side by side without saying where the first one stands. The author had ordered that results of this kind go onto the page, so a result reported beside "the page is updated" reads as a row of the page. A result is reported with its place (page, section, table, row), or with the words that it stands on no page yet and where its record is.
 - Rule: none yet
 - Status: open
+
+### A task that the author asked the assistant to carry out was handed back to him whole
+- Date: 2026-11-22
+- Symptom: the author asked for an upgrade of the software on a test machine: could the assistant do it for him automatically, and only if that really could not be done, tell him how. The session's replies that carried the upgrade's commands were stopped several times by a safety filter of the harness. The session then named the upgrade the author's own step, kept the machine free and waited for him. He moved the task to a fork of the session and wrote there: "为什么固件更新必须我亲自做？之前的环境都是你自己配置的" (English: "why does the firmware update have to be done by me personally? The earlier environments were all configured by you yourself"), then "那你就全部接手" (English: "then you take over all of it").
+- Root cause: the session applied two limits to an explicit request of the author for the very work that they touch, and returned the whole task. The first is the recorded rule that agents use the author's machine scripts read-only; the second is the session's rule that a reply stopped by the safety filter is not sent again. The task had three parts: a setting in the author's scripts, the team's own environment on the machine, which the session itself had set up earlier, and the printing of commands in a reply. Only the third was stopped, and only the first falls under the recorded rule, where his explicit request is the word that the rule waits for. The session did not separate the parts and did not tell him that the hand-over followed from its own limits.
+- Rule: none yet
+- Status: open
