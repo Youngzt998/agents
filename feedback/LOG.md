@@ -756,6 +756,7 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Root cause: the session tied the page's structure to the arrival of its content. The scaffolding rule already says the opposite: the structure is made first and every content slot is a placeholder that names what is missing. A request that something appear in a table or a chart is met at once by the column and the bars with placeholders; the numbers replace them as they are measured.
 - Rule: rules/50-scaffolding.md covers it; no change
 - Status: open
+- Recurrence: 2026-11-22, twenty-seven minutes later. The session had passed the author's request to the team that owns the page and accepted its estimate of about two hours for a checked page; the page was still unchanged. The author: "你怎么还是没更新？" (English: "why have you still not updated it?"). The session then edited the table by hand within minutes and committed it as an interim state. A request to see something on a page is met at once by the smallest change that shows it, marked as interim where the checked version follows.
 
 ### A running session was stopped on one stale reading of a status field, to prevent a failure that had not happened
 - Date: 2026-11-22
