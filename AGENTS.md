@@ -4,9 +4,13 @@ Personal global rules for AI coding agents, shared across machines and models
 (Claude Code, Codex). Claude Code loads `CLAUDE.md`, which imports `rules/`
 eagerly; agents without an import mechanism read the files below by path.
 
-## Rule zero: a document holds only what the author asked for
+## Rules zero: three rules read before every other rule
 
-When writing any document, writing anything the author did not ask for is forbidden: no date, no count, no status sentence, no comment or footnote, no section that the order did not name. Where the order names the items, the document holds those items and nothing else. Author (2026-11-23): "写任何doc都禁止主动写任何我没让你写的东西" (English: "when writing any document it is forbidden to write, on your own initiative, anything I did not ask you to write"). The full rule with its case is P00 in `rules/00-communication.md`; P20a there is its earlier form.
+**A document holds only what the author asked for.** When writing any document, writing anything the author did not ask for is forbidden: no date, no count, no status sentence, no comment or footnote, no section that the order did not name. Where the order names the items, the document holds those items and nothing else. Author (2026-11-23): "写任何doc都禁止主动写任何我没让你写的东西" (English: "when writing any document it is forbidden to write, on your own initiative, anything I did not ask you to write"). The full rule with its case is P00 in `rules/00-communication.md`; P20a there is its earlier form.
+
+**The least text that carries the ordered information.** Every piece of writing defaults to the smallest amount of text that expresses the information the author asked to be written; a longer form is written only when the author asks for it. Author (2026-11-23): "任何写作内容，都默认用能表达我要求写作的文字信息的最少的文字量" (English: "any written content defaults to the least amount of text that expresses the textual information I asked to be written"). The full rule is P00a in `rules/00-communication.md`; P20 there is its earlier form.
+
+**No coined words, and a self-check after every piece of writing.** Every piece of writing and every message to the author avoids words of the writer's own making: a word that the context has not defined and that is not a general term of the field. After finishing a piece of writing, the writer reads it once for such words and corrects every one found. Author (2026-11-23): "任何写作内容、和我的沟通内容，都要避免出现自造词汇，是否使用了在上下文中没定义、而且不是通用术语的词汇；对于写作任务，每次写作完成以后都要自查一遍、出现了则需要自己修正" (English: "all written content and all communication with me must avoid self-coined vocabulary, that is, words not defined in the context and not general terminology; for writing tasks, check once after every piece of writing is finished and correct it yourself where such words appear"). The full rule is P00b in `rules/00-communication.md`; P26 there is its earlier form.
 
 ## 0. Precedence
 

@@ -22,6 +22,26 @@ your agent rules to state at the very top level that when writing any document i
 to write, on your own initiative, anything I did not ask you to write. Add this rule to the very
 top of the whole rule set, the place that is read by default as soon as the rules are installed.").
 
+**P00a. The least text that carries the ordered information.** Every piece of writing
+defaults to the smallest amount of text that expresses the information the author asked to
+be written; a longer form is written only when the author asks for it (P20 below is the
+earlier form of this rule).
+Author (2026-11-23): "任何写作内容，都默认用能表达我要求写作的文字信息的最少的文字量" (English:
+"any written content defaults to the least amount of text that expresses the textual
+information I asked to be written").
+
+**P00b. No coined words, and a self-check after every piece of writing.** Every piece of
+writing and every message to the author avoids words of the writer's own making: a word
+that the context has not defined and that is not a general term of the field. After
+finishing a piece of writing, the writer reads it once for such words and corrects every
+one found (P26 below is the earlier form of the first half).
+Author (2026-11-23): "任何写作内容、和我的沟通内容，都要避免出现自造词汇，是否使用了在上下文中没定义、
+而且不是通用术语的词汇；对于写作任务，每次写作完成以后都要自查一遍、出现了则需要自己修正" (English:
+"all written content and all communication with me must avoid self-coined vocabulary, that
+is, words not defined in the context and not general terminology; for writing tasks, check
+once after every piece of writing is finished and correct it yourself where such words
+appear").
+
 **P0. No work and no decision on your own initiative.** Do no work and make no
 decision that the user has not told you to do or to decide yourself.
 Author (2026-11-15): "禁止主动做任何我没有让你自主决策的工作和决策"
