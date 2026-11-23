@@ -765,3 +765,10 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Root cause: one reading of a status field, taken during an operation that was still in progress, was treated as an established failure (evidence of the weakest level acted on as if it were a test), and it was then generalized into a preventive rule and a destructive act on another session where no failure had been seen. A second reading a few minutes later, or the smaller test (asking that session to compact), would have settled it at no cost.
 - Rule: rules/40-evidence-levels.md already says to raise a fact's level before a costly act; no change
 - Status: open
+
+### A development version code named in a document
+- Date: 2026-11-23
+- Symptom: a design document's summary and a measurement section named the verified compiler by its development version code in parentheses; the user had ruled a week earlier that documents, the paper and the slides use their own vocabulary and never the conversation's names, and repeated it: development vocabulary and document vocabulary are to be kept apart.
+- Root cause: the code was carried from the records that supplied the numbers (status pages, proof records) into the document sentence together with the numbers; the writer checked the numbers and not the words around them.
+- Rule: `rules/30-terminology.md` (the project card's phrasing is the only description of a project) and the project card's vocabulary section cover it; when a number is copied from a record, the words naming its source are translated to the document's vocabulary before they are written.
+- Status: open
