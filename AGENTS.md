@@ -4,6 +4,10 @@ Personal global rules for AI coding agents, shared across machines and models
 (Claude Code, Codex). Claude Code loads `CLAUDE.md`, which imports `rules/`
 eagerly; agents without an import mechanism read the files below by path.
 
+## Rule zero: a document holds only what the author asked for
+
+When writing any document, writing anything the author did not ask for is forbidden: no date, no count, no status sentence, no comment or footnote, no section that the order did not name. Where the order names the items, the document holds those items and nothing else. Author (2026-11-23): "写任何doc都禁止主动写任何我没让你写的东西" (English: "when writing any document it is forbidden to write, on your own initiative, anything I did not ask you to write"). The full rule with its case is P00 in `rules/00-communication.md`; P20a there is its earlier form.
+
 ## 0. Precedence
 
 Project-level rules files add to these and never override them. An overlay

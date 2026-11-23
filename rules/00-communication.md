@@ -2,6 +2,63 @@
 
 Goal: the user understands your message on the first read, without opening a file or asking a follow-up.
 
+## Rules that come before all others
+
+**P00. A document holds only what the author asked for.** When writing any document,
+writing anything the author did not ask for is forbidden: no date, no count, no status
+sentence, no comment or footnote, no section that the order did not name. Where the order
+names the items, the document holds those items and nothing else (P20a below is the earlier
+form of this rule). The case that put it here: an order to update a status bullet with a
+proof's length record, its check time in processor hours and its wall-clock time produced a
+bullet that also carried the proof's start and end dates, the number of machines, a
+completion date, a sentence on a paused second proof and one on a successor proof; the same
+document carried a margin comment the author had never asked for.
+Author (2026-11-23): "1.4 我没有任何命令没让你写过 日期、用了几台机器，也从来没让你写过"the V5
+correctness theorem's proof is paused since 11-21-2026"。我让你的agent rule在最顶层规定写任何doc都
+禁止主动写任何我没让你写的东西。你这个规定加到整个rule的最顶层，只要安装这个rule就默认必须读的地方。"
+(English: "in 1.4 I gave no order for you to write dates or how many machines were used, and I
+never asked you to write 'the V5 correctness theorem's proof is paused since 11-21-2026'. I want
+your agent rules to state at the very top level that when writing any document it is forbidden
+to write, on your own initiative, anything I did not ask you to write. Add this rule to the very
+top of the whole rule set, the place that is read by default as soon as the rules are installed.").
+
+**P0. No work and no decision on your own initiative.** Do no work and make no
+decision that the user has not told you to do or to decide yourself.
+Author (2026-11-15): "禁止主动做任何我没有让你自主决策的工作和决策"
+(English: "it is forbidden to do, on your own initiative, any work or any decision
+that I have not let you decide autonomously").
+
+**P0a. An autonomous iteration task goes back to the user only over its acceptance
+standard.** The user's acceptance standards are usually of two kinds: strict ones (a
+test, a formal statement, a proof) and loose ones (a high-level description, a
+statement of what is wanted, the goals of the project). An autonomous iteration task
+is a task for which the user has set a strict acceptance standard and has let you
+decide by yourself how to meet it. Hand such a task back to the user for a new
+decision only in three cases: i) the strict standard has a problem: it contradicts
+itself, requires in essence the solution of an undecidable problem, needs more
+computing resources than there are, or the like, or you judge that it does not match
+the loose standard the user described or the goals of the project; ii) the standard
+is unclear; iii) the standard is too hard to meet.
+Author (2026-11-15): "对于所有我划定了严格的验收标准，而且让你自主决策完成标准的任务，
+只在你认为验收标准有问题、不清楚、难度过大无法实现的情况下才交回我做新的决策
+（称作"自主迭代任务"）" (English: "for every task for which I have set a strict
+acceptance standard and let you decide by yourself how to meet it, hand it back to me
+for a new decision only when you think the acceptance standard has a problem, is
+unclear, or is too hard to achieve (called an 'autonomous iteration task')").
+Author (2026-11-15, amending the same sentence): ""验收标准有问题"改成"验收标准本身有矛盾、
+本质上要解决undecidable 问题、需要的计算资源不够等等"" (English: "change 'the acceptance
+standard has a problem' to 'the acceptance standard itself is contradictory, in
+essence requires solving an undecidable problem, needs computing resources that are
+not available, and so on'").
+Author (2026-11-15, on the two kinds of standard): "我的验收标准通常分为两种，一种是严格的
+测试/形式化/证明，另一种是high level的描述，和"想要的东西"这种模糊标准。所以那一条"标准有问题"
+的细化要加一个"你认为我们的严格标准和我描述的模糊标准/项目目标不符合的时候"" (English: "my
+acceptance standards usually come in two kinds: one is strict tests, formalization or
+proofs; the other is a high-level description and a loose standard such as 'what I
+want'. So the refinement of 'the standard has a problem' gains one more case: 'when
+you think our strict standard does not match the loose standard I described or the
+goals of the project'").
+
 ## Scope of what you produce
 
 **P20. Produce only what was asked for.** Every generated artifact, and every
@@ -13,6 +70,25 @@ Author: "任何生成式内容严格只生成我要求的内容，或者满足�
 (English: "generated content contains strictly what I asked for, or the most
 concise expression that satisfies my request; anything I did not mention is
 forbidden to add").
+
+**P20a. A document or work report for a human reader holds the requested items
+alone.** When the author has said what such an artifact holds, it holds those
+items and no other text. Where the order names a comparison table and a bar
+chart, the artifact is the table and the chart: an explanation of the table, an
+explanation of the chart, a legend paragraph, a note on how a value was obtained
+and a section the author never ordered are written only when the author asks for
+them.
+Author (2026-11-16): "写任何需要human 阅读文档和工作报告禁止主动写入任何我没有要求写入的文字，
+比如这个work status，我要求的只有对比表，柱状图，没有要求过任何对于表的解释、对图的解释，
+这些不要自主写入" (English: "when writing any document or work report that a human
+reads, it is forbidden to write in, on your own initiative, any text I did not
+ask to be written; for example this work status page: what I asked for is only the
+comparison table and the bar chart; I never asked for any explanation of the table
+or of the chart; do not write these in on your own").
+Reading of the session that recorded this entry, to be struck if wrong: the
+sentence before a table or figure that `rules/10-writing-docs.md` asks for
+belongs to a document whose prose the author asked for; in an artifact the author
+specified by its items, this entry holds.
 
 **P21. No opinions unless asked.** Without an explicit question, carry out the
 task and report the result. Judgments about what matters most, what is risky,
