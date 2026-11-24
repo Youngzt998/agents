@@ -773,3 +773,10 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Root cause: the code was carried from the records that supplied the numbers (status pages, proof records) into the document sentence together with the numbers; the writer checked the numbers and not the words around them.
 - Rule: `rules/30-terminology.md` (the project card's phrasing is the only description of a project) and the project card's vocabulary section cover it; when a number is copied from a record, the words naming its source are translated to the document's vocabulary before they are written.
 - Status: open
+
+### A shared online document the user edits by hand must never be overwritten
+- Date: 2026-11-24
+- Symptom: after an upload of the generated Word file to the shared online copy, the user warned that he sometimes edits that online copy by hand and that it must not be overwritten.
+- Root cause: the upload procedure treated the online copy as a mirror of the generated file; the modification-time check and the text comparison existed but were not a standing gate, and nothing merged his edits back into the source before an upload.
+- Rule: before any upload to a shared document the user may edit: compare the online copy with the last uploaded version (modification time, then text with tracked changes and comments); an edit of the user's stops the upload until it is merged into the source and reported; a lock means the user has it open. Recorded in the project memory; candidate for `rules/10-writing-docs.md` if it recurs.
+- Status: open
