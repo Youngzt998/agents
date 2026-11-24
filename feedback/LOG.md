@@ -790,3 +790,10 @@ A proof effort's progress was reported as the share of a tree of obligations tha
 - Root cause: I searched the decision record of the port alone, found an entry on a suspended alignment, and applied it to another pair of implementations without reading which two it names. The project's own decision document, which holds the founding order of the newer version, was not searched before the claim. A second cause sits behind it: the founding order made "the same algorithm" a goal of the newer version, and no check of mine ever held the measured rows of the two implementations against each other, so the gap (the newer version behind the port in most rows) stood on the status page unreported until the author found it.
 - Rule: none yet. What holds from now: before a claim about what two things are meant to be to each other, the decision documents of every project that names either of them are searched for both names; and a goal of the form "X is the same as Y" gets a standing comparison of X against Y on every measured row, reported with the rows.
 - Status: open
+
+### A complaint about a rendering was answered by deleting the content
+- Date: 2026-11-24
+- Symptom: the user said he had never asked for "this footnote" in the PDF; the assistant deleted the Word margin comment whose text the PDF had rendered as that footnote. The next day the user asked for the comment back: it was wanted as a margin comment in the shared Word copy.
+- Root cause: the complaint named the rendered form (a footnote); the assistant removed the source of the rendering instead of the rendering. The build had been changed earlier to render comments as footnotes, which the user had not asked for either.
+- Rule: when the user objects to how something is rendered in one output, change that output's rendering and keep the content; delete content only when the user names the content. `rules/00-communication.md` P12 and P00 cover the spirit; no new rule text proposed yet.
+- Status: open
