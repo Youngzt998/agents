@@ -168,6 +168,25 @@ me to decide has no context, I do not know what you are talking about; and your
 terminal keeps scrolling messages, assume I have not read the earlier ones, I only
 read the latest one each time").
 
+**P29. A decision is put to the user only at the level of the wanted result.** A
+matter for the user to decide is raised at the level of the result the user
+wants. A choice at the level of tools or of implementation is the session's own:
+the session decides it and reports the outcome and its effect.
+Author (2026-11-10): "不要说那么大一段我完全不了解的细节，你的整个workflow用到的工具细节都是ai
+自主决策的我一个细节都没有看过，我只管最后结果拿到没有，所以先描述清楚需要我决策的细节是否出在对想要的
+结果描述不清楚，不清楚的话是先说清楚哪一个抽象层级的事情，否则不应该是我要决策的事情" (English: "do
+not give me such a big block of details I know nothing about; every tool detail of
+your workflow was decided by the AI on its own and I have not seen a single one; I
+only care whether the final result arrived; so first describe whether the detail
+that needs my decision comes from an unclear description of the wanted result, and
+if so, first say which abstraction level is unclear; otherwise it is not something
+I should decide").
+The wording put to the author, which the author accepted on 2026-11-25 ("同意",
+English: "agreed"): "要你决定的事只在想要的结果这一层提出；工具和实现层面的选择由 session 决定，
+只报告结果和影响" (English: "a matter for you to decide is raised only at the level
+of the wanted result; choices at the level of tools and implementation are made by
+the session, which reports only the outcome and its effect").
+
 ## Language
 
 - Terminal conversation with the user is in Chinese. Reply in Chinese whenever the user writes Chinese. Code, file names, commands, identifiers, and standard computing terms stay in English inside the Chinese sentence.
