@@ -79,8 +79,11 @@ The number of values live at the same time at a program point, measured against 
 An architecture whose instruction word carries several operations issued in the same cycle; the compiler decides which operations run in parallel.
 
 ### megakernel
-One device program that runs a whole sequence of operators (a decoder layer, several layers, or a full forward step) as a single kernel. The work of every operator is scheduled inside the program and the operators synchronize through on-device signals (semaphores, flags, or queues), so no kernel boundary drains the device between operators. The GPU form is a persistent kernel with an on-device scheduler; on Trainium the NKI form is one kernel whose engine instruction streams cover all the operators.
-Do not use: "fused kernel" for the multi-operator program (fusion names the compiler transformation, the megakernel names the program).
+One device program that completes, in one call, at least one whole layer of a model (every block of the layer with the residual additions between them) or one whole step (a decode step, a speculation round, a training step). The work of every operator is scheduled inside the program and the operators synchronize through on-device signals (semaphores, flags, or queues), so no kernel boundary drains the device between operators. The GPU form is a persistent kernel with an on-device scheduler; on Trainium the NKI form is one kernel whose engine instruction streams cover all the operators.
+
+### fused kernel
+One kernel that runs two or more operators within less than a whole layer of a model: a normalization with its projection, an attention block, a loss with its projection. A slice across two blocks that completes no layer and the tail of a model (final normalization, head, top-k, sampler) are fused kernels; a kernel of one operator is neither a fused kernel nor a megakernel. Fusion also names the compiler transformation that merges operators into one kernel.
+The boundary between a fused kernel and a megakernel is the author's (2026-11-25, on a suggested standard): "同意你的分类建议" (English: "I agree with your classification suggestion").
 
 ## Assistant tooling vocabulary
 
